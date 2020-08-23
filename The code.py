@@ -39,14 +39,14 @@ while number == "No number":
                 print ("Your number is", number)
                 break
                 
-
 number = round(float(number)) #???
 binumber = bin(number) # binär
-
-
-
 octnumber = oct(number) #oktale
 print("You entered the number", number, ":", binumber, "/", octnumber, ".")
+
+
+
+
 number_1 = int(binumber[2:])
 number_2 = int(octnumber[2:])
 print("The results of the above numbers are:", number_1, "and", number_2)
@@ -56,4 +56,9 @@ calculate_list = [number_1+number_2, number_1-number_2, number_1*number_2, numbe
 for operations_list, symbols_list, calculate_list in zip(operations_list, 
                                                          symbols_list, calculate_list):
     print(operations_list, ":", number_1, symbols_list, number_2, "=", calculate_list)
+
+
+
+
+
 
